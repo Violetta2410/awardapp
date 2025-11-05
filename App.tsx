@@ -116,11 +116,11 @@ const App: React.FC = () => {
             awards.push({ name: 'Achiever Award', type: 'bronze', description: '1년 이상 + 25회 이상 참석' });
         }
 
-        if (attendanceCount >= 100 && totalMonths < 60) {
+        if (attendanceCount >= 100) {
             awards.push({ name: 'Master', type: 'gold', description: '100회 이상 참석 (Qualification)' });
-        } else if (attendanceCount >= 70 && totalMonths < 36) {
+        } else if (attendanceCount >= 70) {
             awards.push({ name: 'Mentor', type: 'silver', description: '70회 이상 참석 (Qualification)' });
-        } else if (attendanceCount >= 50 && totalMonths < 36) {
+        } else if (attendanceCount >= 50) {
             awards.push({ name: 'Coach', type: 'bronze', description: '50회 이상 참석 (Qualification)' });
         }
 
